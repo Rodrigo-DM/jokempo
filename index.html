@@ -10,40 +10,53 @@
 </head>
 <body>
     <main>
+        <header class="top">
+            <h1 class="top__title">Jokempô</h1>
+        </header>
         <section id="game">
             <div id="player1">
                 <input type="radio" id="rock" class="option__radio" name="option" value="rock">
-                <div id="rock-1" class="option option__select">    
-                    <label for="rock"></label>
+                <div id="rock-1" class="option">    
+                    <label class="player1__select" for="rock"></label>
                     <i class="fas fa-hand-rock"></i>
                 </div>
                
                 <input type="radio" id="paper" class="option__radio" name="option" value="paper">
-                <div id="paper-1" class="option option__select">
-                    <label for="paper"></label>
+                <div id="paper-1" class="option">
+                    <label class="player1__select" for="paper"></label>
                     <i class="fas fa-hand-paper"></i>
                 </div>
                 
                 <input type="radio" id="scissors" class="option__radio" name="option" value="scissors">
-                <div id="scissors-1" class="option option__select">
-                    <label for="scissors"></label>
-                    <i class="fas fa-hand-scissors rotate"></i>
+                <div id="scissors-1" class="option">
+                    <label class="player1__select" for="scissors"></label>
+                    <i class="fas fa-hand-scissors rotate-icon"></i>
+                </div>
+                <div class="score">
+                    <span class="score__title">score</span>
+                    <span id="score-player1" class="score__points"></span>
                 </div>
             </div>
 
-            <div id="player2">
-                <div id="rock-2" class="option player2__option--select">
+            <div id="player2" >
+                <div id="score-2" class="score">
+                    <span class="score__title">score</span>
+                    <span id="score-player2" class="score__points"></span>
+                </div>
+                <div id="rock-2" class="option player2__select">
                     <i class="fas fa-hand-rock"></i>
                 </div>
-                <div id="paper-2" class="option player2__option--select">
+                <div id="paper-2" class="option player2__select">
                     <i class="fas fa-hand-paper"></i>
                 </div>
-                <div id="scissors-2" class="option player2__option--select">
-                    <i class="fas fa-hand-scissors rotate"></i>
+                <div id="scissors-2" class="option player2__select">
+                    <i class="fas fa-hand-scissors rotate-icon"></i>
                 </div>
+                
             </div>
 
-            <input type="button" value="Jogar" id="choose">
+            <input type="button" value="Desafiar" id="choose" class="button">
+            <input type="button" value="Reiniciar" id="reset" class="button">
         </section>
     </main>
     <script src="./assets/js/script.js"></script>
