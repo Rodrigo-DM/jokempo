@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ebcc85aeeb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Jokempô</title>
 </head>
@@ -11,16 +12,38 @@
     <main>
         <section id="game">
             <div id="player1">
-                <input type="radio" id="rock" name="option" value="rock">
-                <label for="rock">Pedra</label>
-                <input type="radio" id="paper" name="option" value="paper">
-                <label for="paper">Papel</label>
-                <input type="radio" id="scissors" name="option" value="scissors">
-                <label for="scissors">Tesoura</label>
+                <input type="radio" id="rock" class="option__radio" name="option" value="rock">
+                <div id="rock-1" class="option option__select">    
+                    <label for="rock"></label>
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+               
+                <input type="radio" id="paper" class="option__radio" name="option" value="paper">
+                <div id="paper-1" class="option option__select">
+                    <label for="paper"></label>
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                
+                <input type="radio" id="scissors" class="option__radio" name="option" value="scissors">
+                <div id="scissors-1" class="option option__select">
+                    <label for="scissors"></label>
+                    <i class="fas fa-hand-scissors rotate"></i>
+                </div>
             </div>
-            <div id="player2"></div>
 
-            <input type="button" value="Aperte" id="choose">
+            <div id="player2">
+                <div id="rock-2" class="option player2__option--select">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <div id="paper-2" class="option player2__option--select">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div id="scissors-2" class="option player2__option--select">
+                    <i class="fas fa-hand-scissors rotate"></i>
+                </div>
+            </div>
+
+            <input type="button" value="Jogar" id="choose">
         </section>
     </main>
     <script src="./assets/js/script.js"></script>

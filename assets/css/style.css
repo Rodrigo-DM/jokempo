@@ -1,0 +1,91 @@
+html, body, main, section, div, input, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 100%;
+}
+
+label {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#game {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#player1 {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#player2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 120px);
+    transform: rotate(180deg);
+}
+
+.option {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option__radio {
+    appearance: none;
+}
+
+.fas {
+    color: crimson;
+    font-size: 50px;
+}
+
+#choose {
+    position: absolute;
+    bottom: -15%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.5rem;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-image: linear-gradient(#9b00f8, #8360ff);
+    cursor: pointer;
+}
+
+.rotate {
+    transform: rotate(75deg);
+}
+
+.option__select:hover {
+    background-color: cyan;
+}
+
+.option__radio:checked +div{
+    background-color: green;
+}
+
