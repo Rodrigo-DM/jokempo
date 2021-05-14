@@ -128,11 +128,7 @@ const checkResult = (player1, player2) => {
             result.innerText = 'VOCÊ VENCEU!'
             scorePlayer1 += 1;
             boxScorePlayer1.innerText = scorePlayer1;
-    } else if (
-        player2 === 'rock' && player1 === 'scissors' ||
-        player2 === 'paper' && player1 === 'rock' ||
-        player2 === 'scissors' && player1 === 'paper'
-        ) {
+    } else {
             result.innerText = 'VOCÊ PERDEU!';
             scorePlayer2 += 1;
             boxScorePlayer2.innerText = scorePlayer2;
