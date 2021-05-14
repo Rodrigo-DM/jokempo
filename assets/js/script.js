@@ -1,7 +1,7 @@
 const optionPlayer1 = document.getElementsByName('option');
 const optionPlayer2 = ['rock', 'paper', 'scissors'];
 
-const player1Select = document.getElementsByClassName('player1__select');
+const player1Select = document.getElementById('player1');
 const player2Select = document.getElementsByClassName('player2__select');
 
 const choose = document.getElementById('choose');
@@ -52,19 +52,7 @@ choose.addEventListener('click', function() {
 // Botão desafiar
 
 // Quando escolher uma opção
-player1Select[0].addEventListener('click', function() {
-    result.innerText = 'Preparado?';
-    game.appendChild(result);
-    notInitial.innerText = '';
-    resetVisualPlayer2();
-});
-player1Select[1].addEventListener('click', function() {
-    result.innerText = 'Preparado?';
-    game.appendChild(result);
-    notInitial.innerText = '';
-    resetVisualPlayer2();
-});
-player1Select[2].addEventListener('click', function() {
+player1Select.addEventListener('click', function() {
     result.innerText = 'Preparado?';
     game.appendChild(result);
     notInitial.innerText = '';
