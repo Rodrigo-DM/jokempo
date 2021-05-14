@@ -23,6 +23,8 @@ boxScorePlayer2.innerText = scorePlayer2;
 
 // Botão desafiar
 choose.addEventListener('click', function() {
+    choose.disabled = true;
+
     let player1 = checkPlayer1();
     let player2 = optionPlayer2[getRandomInt()];
 
@@ -46,6 +48,8 @@ choose.addEventListener('click', function() {
         
                 game.appendChild(result);
             }, 500);
+
+            choose.disabled = false;
         }, 2000);
     } 
 });
