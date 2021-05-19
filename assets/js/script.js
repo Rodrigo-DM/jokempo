@@ -68,6 +68,7 @@ let notInitial = document.createElement('span');
 
 // Quando escolher uma opção
 player1Select.addEventListener('click', function () {
+
     result.innerText = 'Preparado?';
     game.appendChild(result);
     notInitial.innerText = '';
@@ -82,6 +83,7 @@ const optionPlayer2 = ['rock', 'paper', 'scissors'];
 
 choose.addEventListener('click', function () {
     choose.disabled = true;
+    player1Select.style.pointerEvents = 'none';
 
     let player1 = checkPlayer1();
     let player2 = optionPlayer2[getRandomInt()];
@@ -107,6 +109,7 @@ choose.addEventListener('click', function () {
                 game.appendChild(result);
 
                 choose.disabled = false;
+                player1Select.style.pointerEvents = 'visible';
             }, 500);
         }, 2000);
     }
