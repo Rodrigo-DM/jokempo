@@ -12,7 +12,7 @@
     O jogo pedra, papel e tesoura funciona da seguinte maneira, o usuário escolhe a sua opção e clica ou presiona o botão 'Desafiar', em seguida o código irá escolhe uma opção aleatória e comparar com a escolha do usuário para obter o resultado da partida.
 </p>
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/58209931/120471236-db716400-c37a-11eb-908e-25361051e8db.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/58209931/120528510-edbac480-c3b1-11eb-84bd-de78570d72a8.gif)
 
 ### 🛠 Tecnologias
 
