@@ -82,9 +82,6 @@ const choose = document.getElementById('choose');
 const optionPlayer2 = ['rock', 'paper', 'scissors'];
 
 choose.addEventListener('click', function () {
-    choose.disabled = true;
-    player1Select.style.pointerEvents = 'none';
-
     let player1 = checkPlayer1();
     let player2 = optionPlayer2[getRandomInt()];
 
@@ -95,6 +92,8 @@ choose.addEventListener('click', function () {
         notInitial.innerText = 'Faça sua escolha';
         game.appendChild(notInitial);
     } else {
+        choose.disabled = true;
+        player1Select.style.pointerEvents = 'none';
         const boxPlayer2 = document.getElementById('player2');
         boxPlayer2.classList.add('anima');
 
