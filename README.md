@@ -19,3 +19,16 @@
 - HTML
 - CSS
 - JavaScript
+
+### Autor
+---
+
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/58209931?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Rodrigo Diniz Monteiro</b></sub>
+
+
+Feito por Rodrigo D Monteiro 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Rodrigo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rodrigodmonteiro/)](https://www.linkedin.com/in/rodrigodmonteiro/) 
+[![Gmail Badge](https://img.shields.io/badge/-rodrigo.dmnr@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rodrigo.dmnr@gmail.com)](mailto:rodrigo.dmnr@gmail.com)
