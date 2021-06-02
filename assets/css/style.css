@@ -32,7 +32,7 @@ body {
     line-height: 80px;
     text-align: center;
     background-image: linear-gradient(#1A16A6, #3D149C);
-    box-shadow: 0px 1px 10px 4px #414141;
+    box-shadow: 0px 0px 15px 6px #000f64;
 }
 
 .top__title {
